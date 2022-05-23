@@ -1,0 +1,25 @@
+body{
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  margin: 10vw;
+}
+
+h1{
+  text-align: center;
+  font-variant: small-caps;
+}
+
+div{
+  align: center;
+}
+
+.form_button{
+  height: 7vw;
+  width: 20vw;
+}
+
+.inputbox{
+  height: 7vw;
+  width= 20vw;
+}
