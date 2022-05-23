@@ -16,7 +16,8 @@ div{
 
 .form_button{
   height: 4vw;
-  width: 20vw;
+  width: 10vw;
+  margin-left: 2vw;
   font-size: 2vw;
 }
 
