@@ -8,6 +8,7 @@ h2{
 }
 
 div{
+  display: flex;
   justify-content: center;
 }
 
