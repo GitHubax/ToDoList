@@ -1,10 +1,16 @@
 body{
-  background-color: blue;
+  background-color: aquamarine;
   margin: 10vw;
+  margin-top: 4vw;
+}
+
+h1{
+  text-align: center;
+  font-size: 4vw;
 }
 
 h2{
-  text-align: center;
+  padding-left: 6vw;
 }
 
 div{
@@ -19,7 +25,29 @@ div{
   font-size: 2vw;
 }
 
-.inputbox{
+#inputbox{
   height: 4vw;
   font-size: 2vw;
+}
+
+#Tasks{
+  flex-direction: column;
+  /* align-items: flex-start; */
+}
+
+#Task{
+  margin-right: 1.5vw;
+}
+
+.Tasks{
+  display: inline-block;
+  background-color: black;
+  color: aliceblue;
+  width: 65vw;
+  min-height: 2vw;
+  align-self: center;
+  align-content: flex-start;
+  vertical-align: middle;
+  overflow-wrap: normal;
+  padding: 5px 0px 0px 7px;
 }

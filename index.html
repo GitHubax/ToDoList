@@ -11,16 +11,38 @@
    </head>
 
    <body>
-		<h2>
+
+
+		<h1>
+         <u>
 			My ToDo List
-		</h2>
+         </u>
+		</h1>
+
 		<br>
+
 		<div>
-      <form>
-      	<input type="text" class="inputbox" size="45" placeholder="Enter Your Task" autofocus="on">         
-      	<input type="submit" class="form_button" value="Add Task">
-      </form>
+         <form>
+            <input type="text" id="inputbox" size="45" placeholder="Enter Your Task" autofocus="on">         
+            <button type="button" class="form_button" onclick= "show(), form.reset()">Add Task</button>
+         </form>
 		</div>
+
+      <hr>
+
+      <h2 id="taskhead" style="display:none">
+         <u>
+			My Pending Tasks
+         </u>
+		</h2>
+      <div id="Tasks"></div>
+
+      <!-- same input check added -->
+      <!-- blank input check added -->
+      <!-- form clear on new task added -->
+      <!-- task unique identifier added -->
+
+
    </body>
 
 </html>
