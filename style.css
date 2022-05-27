@@ -18,7 +18,17 @@ div{
   justify-content: center;
 }
 
-.form_button{
+#compact_fn_btn{
+  display: inline-flex;
+  justify-content: flex-end;
+  width: 50vw;
+}
+
+.compact_fn_btn{
+  margin-left: 10px;
+}
+
+#form_button{                                         /*button to add task*/
   height: 4vw;
   width: 15vw;
   margin-left: 2vw;
@@ -30,16 +40,12 @@ div{
   font-size: 2vw;
 }
 
-#Tasks{
+#Tasks{                                               /*tasklist div */
   flex-direction: column;
   /* align-items: flex-start; */
 }
 
-#Task{
-  margin-right: 1.5vw;
-}
-
-.Tasks{
+.Tasks{                                               /*class for each individual task*/
   display: inline-block;
   background-color: black;
   color: aliceblue;
@@ -51,3 +57,24 @@ div{
   overflow-wrap: normal;
   padding: 5px 0px 0px 7px;
 }
+
+input:checked+label{                                  /*strikethrough feature  */
+  text-decoration:line-through;
+  opacity: 50%;
+}
+
+.taskdelbtn{                                          /*class of button to delete a task*/
+  position: absolute;
+  right: 18vw;
+  border: 2px groove grey;
+  background-color: red;
+  color: ghostwhite;
+}
+
+.taskdelbtn:active{
+  border-color: black;
+}
+
+/* .taskdelbtn:onclick+div{
+  content: none;
+} */

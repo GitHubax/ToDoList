@@ -24,17 +24,32 @@
 		<div>
          <form>
             <input type="text" id="inputbox" size="45" placeholder="Enter Your Task" autofocus="on">         
-            <button type="button" class="form_button" onclick= "show(), form.reset()">Add Task</button>
+            <button type="button" id="form_button" onclick= "show(), form.reset()">Add Task</button>
          </form>
 		</div>
 
       <hr>
 
       <h2 id="taskhead" style="display:none">
+
          <u>
 			My Pending Tasks
          </u>
+
+
+         <div id="compact_fn_btn">
+
+         <button type="button" class="compact_fn_btn" id="del" onclick= "delall()">Delete All tasks</button>
+
+         <button type="button" class="compact_fn_btn" id="chk" onclick= "checkall()">Mark All tasks as Done</button>
+
+         <button type="button" class="compact_fn_btn" id="unchk" onclick= "uncheckall()" style="display: none">Mark All tasks as Undone</button>
+
+         </div>
+
 		</h2>
+
+
       <div id="Tasks"></div>
 
       <!-- same input check added -->
