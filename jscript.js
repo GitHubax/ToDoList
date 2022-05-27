@@ -50,9 +50,9 @@ function show(){            //to create a task on button click
       lbl.htmlFor = (tsk);                                            //checkbox linking
       lbl.append(value);                                              //Task input content injection
 
-      var del = document.createElement('input');                      //create a delete task btn
-      del.type = 'reset';
-      del.value = 'X';
+      var del = document.createElement('button');                      //create a delete task btn
+      del.type = 'button';
+      del.append('X');
       //deletion[x] = "Delbtn " + x;
       //del.id = (deletion[x]);
       del.className = "taskdelbtn";
@@ -82,7 +82,15 @@ function show(){            //to create a task on button click
 //    document.getElementById(tsk).innerHTML = "";
 // }
 // }
-
+var close = document.getElementsByClassName('taskdelbtn');
+for (var i = 0; i < close.length; i++) {
+   close[i].onclick = function() {
+      this.style.display = "none";
+      var diva = this.parentElement;
+      delete (diva);
+      document.getElementsByClass("Tasks").innerHTML = "";
+  }
+}
 
 
 
